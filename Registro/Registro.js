@@ -86,7 +86,7 @@ function validateForm() {
   }
 
   if (isValid) {
-    alert('Formulario enviado con éxito!');
+    alert('Sus datos han sido registrados con éxito');
     // Aquí puedes agregar el código para enviar los datos al servidor
   }
 }
