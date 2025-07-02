@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Mascota - Huellitas</title>
+  <link rel="stylesheet" href="estilos_registro.css">
+</head>
+<body>
+<div class="container">
+  <h1>Registro de Mascota</h1>
+  <form>
+    <div class="table-wrapper">
+      <h2>Datos del Propietario</h2>
+      <table>
+        <tr><th>Nombre</th><th>Domicilio</th><th>Celular</th><th>Correo</th></tr>
+        <tr>
+          <td><input type="text" name="propietario-nombre" required></td>
+          <td><input type="text" name="propietario-domicilio" required></td>
+          <td><input type="text" name="propietario-celular" required></td>
+          <td><input type="email" name="propietario-correo" required></td>
+        </tr>
+      </table>
+    </div>
+    <div class="table-wrapper">
+      <h2>Datos de la Mascota</h2>
+      <table>
+        <tr><th>Nombre</th><th>Especie</th><th>Raza</th><th>Edad</th><th>Peso</th><th>Sexo</th><th>Esterilizado</th></tr>
+        <tr>
+          <td><input type="text" name="mascota-nombre" required></td>
+          <td><input type="text" name="mascota-especie" required></td>
+          <td><input type="text" name="mascota-raza" required></td>
+          <td>
+            <input type="number" name="mascota-anos" placeholder="Años" required style="width: 45%; padding: 8px; font-size: 16px;">
+            <input type="number" name="mascota-meses" placeholder="Meses" required style="width: 45%; padding: 8px; font-size: 16px;">
+          </td>
+          <td><input type="number" name="mascota-peso" step="0.1" required style="padding: 8px; font-size: 16px;"></td>
+          <td>
+            <select name="mascota-sexo" required style="padding: 8px; font-size: 16px;">
+              <option value="">Selecciona</option>
+              <option value="macho">Macho</option>
+              <option value="hembra">Hembra</option>
+            </select>
+          </td>
+          <td>
+            <select name="mascota-esterilizado" required style="padding: 8px; font-size: 16px;">
+              <option value="">Selecciona</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <button type="submit">Registrar</button>
+  </form>
+</div>
+<script src="Registro.js"></script>
+</body>
+</html>
